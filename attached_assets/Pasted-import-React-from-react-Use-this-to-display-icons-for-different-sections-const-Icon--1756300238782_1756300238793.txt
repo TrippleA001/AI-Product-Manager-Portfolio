@@ -1,0 +1,191 @@
+import React from 'react';
+
+// Use this to display icons for different sections.
+const Icon = ({ children }) => (
+  <span className="text-4xl pr-4">{children}</span>
+);
+
+const Section = ({ title, children, className = '' }) => (
+  <div className={`my-8 p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg ${className}`}>
+    <h2 className="text-3xl font-bold mb-6 flex items-center text-gray-900 dark:text-gray-100">
+      {title}
+    </h2>
+    {children}
+  </div>
+);
+
+const CaseStudy = ({ title, role, challenge, process, solution, impact }) => (
+  <div className="mb-10 border-b pb-8 border-gray-200 dark:border-gray-700 last:border-b-0">
+    <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">{title}</h3>
+    <div className="text-lg text-gray-700 dark:text-gray-300">
+      <p className="mb-2"><strong>My Role:</strong> {role}</p>
+      <div className="mb-4">
+        <p className="font-semibold text-gray-800 dark:text-gray-200">The Challenge:</p>
+        <p className="pl-4 border-l-4 border-yellow-500 italic">{challenge}</p>
+      </div>
+      <div className="mb-4">
+        <p className="font-semibold text-gray-800 dark:text-gray-200">The Process:</p>
+        <ul className="list-disc list-inside pl-4 space-y-2">
+          {process.map((step, index) => (
+            <li key={index}>{step}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="mb-4">
+        <p className="font-semibold text-gray-800 dark:text-gray-200">The Solution:</p>
+        <p className="pl-4">{solution}</p>
+      </div>
+      <div>
+        <p className="font-semibold text-gray-800 dark:text-gray-200">The Impact:</p>
+        <ul className="list-disc list-inside pl-4 space-y-2 font-bold">
+          {impact.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+);
+
+const Skill = ({ title, items }) => (
+  <div className="mb-4">
+    <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
+    <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  </div>
+);
+
+const App = () => {
+  return (
+    <div className="font-sans antialiased text-gray-900 dark:bg-gray-900 dark:text-gray-100 p-8">
+      <div className="max-w-4xl mx-auto space-y-12">
+        
+        {/* Landing Page Section */}
+        <Section title={<>Abduljaleel Abdulsamad — Portfolio of Impact</>}>
+          <div className="flex flex-col md:flex-row items-center md:space-x-8">
+            <div className="flex-shrink-0 mb-4 md:mb-0">
+              <img 
+                src="https://placehold.co/128x128/333/fff?text=Headshot" 
+                alt="Headshot of Abduljaleel Abdulsamad" 
+                className="rounded-full border-4 border-gray-300 dark:border-gray-600"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <p className="text-lg leading-relaxed">
+                I work at the intersection of data, product, and human potential. Over the last five years, I’ve built impactful, data-driven products and led cross-functional teams to deliver on-time, high-impact projects. My background spans <strong className="font-extrabold">AI, fintech, education, and healthcare</strong>, where I've focused on solving complex problems for emerging markets.
+              </p>
+              <p className="mt-4 text-lg font-medium italic">
+                My mission is simple: to build products and ecosystems that democratize access, empower people, and create measurable impact through technology.
+              </p>
+            </div>
+          </div>
+        </Section>
+        
+        {/* Impact Stories Section */}
+        <Section title={<><Icon>📌</Icon>My Impact Stories</>}>
+          <CaseStudy
+            title="AI-Powered Education Analytics at GradrAI"
+            role="AI Product & Technical Project Manager"
+            challenge="The process of grading and providing feedback on student scripts is manually intensive, time-consuming, and prone to human error. This is a significant bottleneck for educators and a barrier to providing timely, personalized feedback to learners. Our goal was to leverage AI to create a solution that dramatically improves efficiency and accuracy."
+            process={[
+              "I took full ownership of the AI-powered education analytics platform, leading the entire product lifecycle from ideation and scoping to deployment.",
+              "I managed a cross-functional team of 15, including developers, data scientists, designers, and QA testers, using Agile methodology to ensure perfect alignment and on-time delivery.",
+              "I worked directly with our AI engineers to continuously refine AI models. By focusing on algorithm accuracy and scalability, we built a solution capable of handling up to 200 scripts at a time, drastically cutting marking time.",
+              "I curated detailed KPI dashboards in Power BI to provide real-time visibility into the product's performance. These dashboards tracked key metrics like AI grading accuracy and learner engagement, which informed our product roadmap and strategic decisions."
+            ]}
+            solution="We successfully launched an automated grading and feedback platform that saved significant time for educators and provided valuable insights for learners."
+            impact={[
+              "Reduced Grading Errors by 70% and Increased Learner Engagement by 30%.",
+              "Cut Marking Time by 90% by building a scalable AI model.",
+              "Achieved 100% On-Time Delivery of all sprints and milestones.",
+              "Streamlined Onboarding and Reduced Knowledge Transfer Time by 50%."
+            ]}
+          />
+          <CaseStudy
+            title="Scaling Financial Inclusion with Afripay"
+            role="Technical Product Manager"
+            challenge="Millions of users across Africa face significant barriers to cross-border transactions due to complex regulations, currency fluctuations, and inconsistent infrastructure. Our goal was to build a reliable payment platform that democratizes financial access and streamlines transactions across the continent."
+            process={[
+              "I spearheaded the product strategy by leading user onboarding research to understand key pain points in the KYC process. I used these insights to build a detailed product roadmap focused on three key areas: optimizing payment routing, simplifying the KYC flow, and ensuring multi-country compliance.",
+              "I managed a distributed team across 4 time zones, implementing Agile workflows and sprint retrospectives. This allowed us to reduce our average feature delivery time from 6 to 4 weeks, ensuring we could adapt quickly to market needs and regulatory changes.",
+              "I led the coordination of developers, designers, data analysts, and cybersecurity specialists. My key actions included leading the integration of cross-border payment APIs and facilitating partnership alignment with local banks and government bodies."
+            ]}
+            solution="We delivered four major product rollouts, including a streamlined payment platform and an edu-fintech product that served users across 20 African countries."
+            impact={[
+              "Increased User Activation by 40% by simplifying the KYC process.",
+              "Reduced Failed Transactions by 35% by leading the integration of cross-border payment APIs.",
+              "Improved Payment Routing Efficiency by 25% using real-time KPI dashboards.",
+              "100% On-Time Milestone Delivery for all four major product rollouts."
+            ]}
+          />
+          <CaseStudy
+            title="Optimizing Data Delivery with Darlytics"
+            role="Technical & Data Product Manager"
+            challenge="Enterprise clients often face inefficient data delivery cycles and poor adoption of analytics solutions, leading to wasted time and resources. Our goal was to streamline project delivery and ensure high client satisfaction."
+            process={[
+              "I implemented Agile methodologies, including sprints, sprint planning, and retrospectives, to manage 7+ concurrent client data projects.",
+              "I collaborated with product, design, sales, and development managers to align strategy and execution across 30+ team members and 4 time zones, ensuring all deliveries met the quality standards of our enterprise clients.",
+              "I maintained high client satisfaction through continuous communication, KPI tracking, and tailoring deliverables to meet client needs."
+            ]}
+            solution="My team successfully delivered 5 predictive models and 7 interactive dashboards for enterprise clients, including the SnapBooks project, which automated SME record-keeping to uncover over ₦30M in overlooked income."
+            impact={[
+              "Achieved 95% Client Satisfaction upon delivering 5 predictive models and 7 interactive dashboards.",
+              "Increased Adoption of Analytics Solutions by 30% by aligning strategy and execution across multiple teams.",
+              "Reduced Delivery Cycles by 55% by implementing Agile sprints and improving team productivity."
+            ]}
+          />
+          <CaseStudy
+            title="Empowering Women in AI with the Webfala Fellowship"
+            role="AI Engineering Lead & Associate Program Lead"
+            challenge="AI education and opportunities are heavily concentrated in urban centers, leaving many underserved regions with limited access to future-ready skills. We aimed to create a sustainable program that equipped women in these regions with the AI skills needed to solve local problems."
+            process={[
+              "I designed a comprehensive 6-month funded AI fellowship and curriculum focused on empowering women in underserved regions.",
+              "I delivered hands-on training sessions on workflow automation and Python scripting to empower fellows to build real-world, data-driven solutions while ensuring data privacy and security compliance.",
+              "I coordinated with funding partners and local stakeholders—including tech hubs and universities—to secure funding and expand our reach to over 1,000 attendees."
+            ]}
+            solution="The fellowship successfully equipped 20 women with solution-oriented AI skills, culminating in the development of 5 AI-driven community initiatives."
+            impact={[
+              "Achieved a 90% Program Completion Rate and a 60% Post-Program AI Solution Deployment Rate.",
+              "Increased Local Adoption by building products that solved immediate community needs.",
+              "Secured Renewal Funding by successfully coordinating with partners and demonstrating clear deliverables."
+            ]}
+          />
+        </Section>
+        
+        {/* Skills & Vision Section */}
+        <Section title={<><Icon>🔧</Icon>Skills & Vision</>}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <Skill
+              title="Product Management"
+              items={["Agile Project Delivery", "Roadmapping", "Stakeholder Alignment", "User Research", "Scrum"]}
+            />
+            <Skill
+              title="Data & AI"
+              items={["AI Model Development", "Predictive Analytics", "Data Visualization (Power BI)", "Python", "SQL"]}
+            />
+            <Skill
+              title="Project Leadership"
+              items={["Cross-functional Team Leadership", "Workflow Automation (Make, Zapier)", "Project Scoping", "Budget Tracking"]}
+            />
+            <Skill
+              title="Ecosystem Building"
+              items={["Partnership Alignment", "Community Leadership", "Program Design"]}
+            />
+          </div>
+          <div className="mt-8">
+            <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100 flex items-center"><Icon>🌟</Icon>Vision Forward</h3>
+            <p className="text-lg text-gray-700 dark:text-gray-300">
+              I believe the next decade of innovation lies in AI-driven solutions for real human problems—from financial inclusion and education to healthcare and sustainable development. My goal is to lead product and data teams building scalable, ethical, and impactful technologies for emerging markets and beyond.
+            </p>
+          </div>
+        </Section>
+        
+      </div>
+    </div>
+  );
+};
+
+export default App;
