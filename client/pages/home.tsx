@@ -388,7 +388,7 @@ const Home = () => {
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-white leading-relaxed max-w-3xl" data-testid="text-hero-subtitle">
                 Product Manager with 5+ years crafting data-driven solutions across 
-                <strong className="text-yellow-300 font-semibold"> AI, fintech, education, and healthcare</strong> 
+                <strong className="text-yellow-300 font-semibold"> AI, fintech, education, and healthcare </strong> 
                 that democratize access and empower emerging markets.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
