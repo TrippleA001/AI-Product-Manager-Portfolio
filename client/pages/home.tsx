@@ -295,7 +295,7 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="font-bold text-xl text-primary" data-testid="nav-brand">
-            Abduljaleel Abdulsamad - Technical Product Manager (AI)
+            AbdulJaleel AbdulSamad - Technical Product Manager (AI)
           </div>
           <div className="hidden md:flex space-x-8">
             <a 
