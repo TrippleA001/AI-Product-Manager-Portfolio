@@ -373,7 +373,7 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-white/20 rounded-full scale-110 blur-sm"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" 
+                  src="attached_assets\AbdulSamad AbdulJaleel Potrait (Large).png?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" 
                   alt="Abduljaleel Abdulsamad - Product Manager" 
                   className="relative w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white/30 shadow-2xl"
                   data-testid="img-headshot"
@@ -624,7 +624,7 @@ const Home = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
               <a 
-                href="mailto:abduljaleel@example.com" 
+                href="mailto:abduljaleel_abdulsamad@yahoo.com" 
                 className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg"
                 data-testid="button-email"
               >
@@ -632,7 +632,7 @@ const Home = () => {
                 Send Email
               </a>
               <a 
-                href="https://linkedin.com/in/abduljaleel" 
+                href="https://www.linkedin.com/in/abdul-samad-abdul-jaleel/" 
                 className="inline-flex items-center px-8 py-4 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-secondary/90 transition-all"
                 data-testid="button-linkedin"
               >
@@ -640,7 +640,7 @@ const Home = () => {
                 LinkedIn Profile
               </a>
               <a 
-                href="#" 
+                href="attached_assets\ABDULSAMAD ABDULJALEEL Product Manager.pdf" 
                 className="inline-flex items-center px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-all"
                 data-testid="button-resume"
               >
@@ -651,7 +651,7 @@ const Home = () => {
 
             <div className="border-t border-border pt-8">
               <p className="text-muted-foreground" data-testid="text-copyright">
-                © 2024 Abduljaleel Abdulsamad. Crafted with care to showcase real impact.
+                © 2024 Abduljaleel Abdulsamad. Championing real impact with AI products.
               </p>
             </div>
           </div>
