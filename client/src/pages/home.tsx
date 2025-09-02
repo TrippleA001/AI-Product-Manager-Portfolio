@@ -462,7 +462,7 @@ const Home = () => {
                 "Scoped requirements through faculty & student interviews (50+)",
                 "Led full product lifecycle with 15-person cross-functional team across 4 time zones",
                 "Managed Agile methodology ensuring on-time delivery across developers, data scientists, designers, and QA",
-                "Collaborated directly with AI engineers to build a scalable solution handling 200+ scripts simultaneously",
+                "Collaborated directly with AI engineers to build scalable solution handling 200+ scripts simultaneously",
                 "Integrated AI grading models + Power BI dashboards to automate feedback and track learner engagement",
                 "Conducted onboarding sessions with lecturers and piloted across 3 faculties",
                 "Designed internal GTM strategy via faculty academic councils & departmental buy-in"
@@ -471,9 +471,9 @@ const Home = () => {
               impact={[
                 "Cut grading time for lecturers by 90% while maintaining 95% accuracy",
                 "Increased student satisfaction by 25% (surveyed post-pilot)",
-                "Increased student performance by 60% by providing personalized feedback.",
-                "Adopted by 5 departments, covering 2,000+ students in one semester",
-                            ]}
+                "Increased student performance by 60% by providing personalized feedback",
+                "Adopted by 5 departments, covering 2,000+ students in one semester"
+              ]}
               icon={Brain}
               iconBg="bg-accent/10 text-accent"
               documents={["AI Model Architecture Overview", "Product Roadmap & KPI Dashboard", "Team Performance Metrics"]}
@@ -495,7 +495,7 @@ const Home = () => {
                 "Introduced real-time KPI dashboards for monitoring transactions",
                 "Launched targeted pilot campaigns with 3 universities to onboard students and schools"
               ]}
-              solution="Delivered four major product rollouts, including a streamlined payment platform serving users across 20 African countries."
+              solution="Delivered four major product rollouts, including a streamlined payment platform serving users across 10 African countries."
               impact={[
                 "Processed $2M+ in student tuition & cross-border transactions in first 6 months",
                 "Increased processing efficiency by 70%; reduced compliance errors by 55%",
@@ -597,7 +597,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 animate-fade-in">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8 animate-fade-in">
             <div className="flex items-center">
               <div className="bg-primary/10 p-3 rounded-lg mr-4">
                 <Target className="w-6 h-6 text-primary" />
@@ -627,7 +627,9 @@ const Home = () => {
                 items={["Cross-functional Team Leadership", "Workflow Automation (Make, Zapier)", "Project Scoping & Planning", "Budget & Resource Management", "Multi-timezone Coordination"]}
               />
             </div>
-            
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 animate-fade-in max-w-4xl mx-auto">
             <div className="flex items-center">
               <div className="bg-accent/10 p-3 rounded-lg mr-4">
                 <Network className="w-6 h-6 text-accent" />
