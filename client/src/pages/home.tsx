@@ -388,7 +388,7 @@ const Home = () => {
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-white leading-relaxed max-w-3xl" data-testid="text-hero-subtitle">
                 Product Manager with 5+ years crafting data-driven solutions across 
-                <strong className="text-yellow-300 font-semibold"> AI, fintech, education, and healthcare</strong> 
+                <strong className="text-yellow-300 font-semibold"> AI, fintech, education, and healthcare </strong> 
                 that democratize access and empower emerging markets.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -449,28 +449,31 @@ const Home = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real results from complex challenges across AI, fintech, and emerging markets
+              Real results from complex challenges across AI, fintech, healthcare, and emerging markets
             </p>
           </div>
 
           <div className="animate-fade-in">
             <CaseStudy
-              title="AI-Powered Education Analytics at GradrAI"
+              title="GradRai – AI-Powered Grading & Analytics Platform"
               role="AI Product & Technical Project Manager"
-              challenge="The process of grading and providing feedback on student scripts is manually intensive, time-consuming, and prone to human error. This is a significant bottleneck for educators and a barrier to providing timely, personalized feedback to learners."
+              challenge="University lecturers struggled with time-intensive, inconsistent grading that delayed feedback and hurt student satisfaction."
               process={[
-                "Led full product lifecycle for AI-powered education analytics platform with 15-person cross-functional team",
-                "Managed Agile methodology ensuring perfect alignment and on-time delivery across developers, data scientists, designers, and QA",
+                "Scoped requirements through faculty & student interviews (50+)",
+                "Led full product lifecycle with 15-person cross-functional team across 4 time zones",
+                "Managed Agile methodology ensuring on-time delivery across developers, data scientists, designers, and QA",
                 "Collaborated directly with AI engineers to build scalable solution handling 200+ scripts simultaneously",
-                "Curated detailed KPI dashboards in Power BI to provide real-time visibility into product performance"
+                "Integrated AI grading models + Power BI dashboards to automate feedback and track learner engagement",
+                "Conducted onboarding sessions with lecturers and piloted across 3 faculties",
+                "Designed internal GTM strategy via faculty academic councils & departmental buy-in"
               ]}
               solution="Launched automated grading and feedback platform with real-time Power BI dashboards tracking AI accuracy and learner engagement."
               impact={[
-                "Reduced Grading Errors by 70% and Increased Learner Engagement by 30%",
-                "Cut Marking Time by 90% by building a scalable AI model",
-                "Achieved 100% On-Time Delivery of all sprints and milestones",
-                "Streamlined Onboarding and Reduced Knowledge Transfer Time by 50%"
-              ]}
+                "Cut grading time for lecturers by 90% while maintaining 95% accuracy",
+                "Increased student satisfaction by 25% (surveyed post-pilot)",
+                "Increased student performance by 60% by providing personalized feedback"
+                "Adopted by 5 departments, covering 2,000+ students in first semester",
+                            ]}
               icon={Brain}
               iconBg="bg-accent/10 text-accent"
               documents={["AI Model Architecture Overview", "Product Roadmap & KPI Dashboard", "Team Performance Metrics"]}
@@ -479,20 +482,25 @@ const Home = () => {
 
           <div className="animate-fade-in">
             <CaseStudy
-              title="Scaling Financial Inclusion with Afripay"
+              title="Afripay – EduFinTech Cross-Border Payment Platform"
               role="Technical Product Manager"
-              challenge="Millions of users across Africa face significant barriers to cross-border transactions due to complex regulations, currency fluctuations, and inconsistent infrastructure."
+              challenge="Afripay aimed to expand its payment platform to serve students and institutions across Africa, but faced fragmented regulation, inconsistent infrastructure and unreliable transaction visibility."
               process={[
+                "Oversaw 4 concurrent projects across Nigeria, Ghana, Kenya, and Finland",
                 "Led user onboarding research to optimize payment routing, KYC flow, and multi-country compliance",
-                "Managed distributed team across 4 time zones, reducing feature delivery from 6 to 4 weeks",
-                "Coordinated cross-border payment API integrations and partnerships with local banks and government bodies"
+                "Managed distributed team across 4 time zones, reducing feature delivery from 10 to 2 weeks",
+                "Collaborated with regulators & compliance officers to embed KYC/AML requirements into product roadmap",
+                "Coordinated product, design, sales, and dev teams to prioritize features",
+                "Coordinated cross-border payment API integrations and partnerships with fintects and educational bodies",
+                "Introduced real-time KPI dashboards for monitoring transactions",
+                "Launched targeted pilot campaigns with 3 universities to onboard students and schools"
               ]}
               solution="Delivered four major product rollouts including streamlined payment platform serving users across 20 African countries."
               impact={[
-                "Increased User Activation by 40% by simplifying the KYC process",
-                "Reduced Failed Transactions by 35% by leading the integration of cross-border payment APIs",
-                "Improved Payment Routing Efficiency by 25% using real-time KPI dashboards",
-                "100% On-Time Milestone Delivery for all four major product rollouts"
+                "Processed $2M+ in student tuition & cross-border transactions in first 6 months",
+                "Increased processing efficiency by 70%; reduced compliance errors by 55%",
+                "Achieved 25K new user signups through university partnerships",
+                "Rolled out cross-country within 3 months"
               ]}
               icon={Globe}
               iconBg="bg-primary/10 text-primary"
@@ -502,47 +510,77 @@ const Home = () => {
 
           <div className="animate-fade-in">
             <CaseStudy
-              title="Optimizing Data Delivery with Darlytics"
-              role="Technical & Data Product Manager"
-              challenge="Enterprise clients often face inefficient data delivery cycles and poor adoption of analytics solutions, leading to wasted time and resources."
+              title="Webfala Women in AI Fellowship"
+              role="AI & Product Faculty Lead"
+              challenge="AI access in Nigeria remained concentrated in major cities like Lagos/Abuja, leaving women outside urban hubs excluded from opportunities. Most trainings in Nigeria focus on coding skills, requiring participant to seek employments rather than build viable solutions to local problems."
               process={[
-                "Implemented Agile methodologies to manage 7+ concurrent client data projects",
-                "Collaborated with product, design, sales, and development managers across 30+ team members in 4 time zones",
-                "Maintained high client satisfaction through continuous communication and KPI tracking"
-              ]}
-              solution="Delivered 5 predictive models and 7 interactive dashboards, including SnapBooks project uncovering ₦30M+ in overlooked SME income."
-              impact={[
-                "Achieved 95% Client Satisfaction upon delivering 5 predictive models and 7 interactive dashboards",
-                "Increased Adoption of Analytics Solutions by 30% by aligning strategy and execution",
-                "Reduced Delivery Cycles by 55% by implementing Agile sprints and improving team productivity"
-              ]}
-              icon={TrendingUp}
-              iconBg="bg-accent/10 text-accent"
-              documents={["SnapBooks Predictive Model Report", "Data Analytics Dashboard Design", "Client Satisfaction Survey Results"]}
-            />
-          </div>
-
-          <div className="animate-fade-in">
-            <CaseStudy
-              title="Empowering Women in AI with Webfala Fellowship"
-              role="AI Engineering Lead & Associate Program Lead"
-              challenge="AI education and opportunities are heavily concentrated in urban centers, leaving many underserved regions with limited access to future-ready skills."
-              process={[
-                "Designed comprehensive 6-month funded AI fellowship curriculum",
-                "Delivered hands-on Python scripting and workflow automation training",
-                "Coordinated with funding partners and local stakeholders to secure funding and expand reach"
+                "Designed & delivered a 6-month AI fellowship for 20 female fellows covering the full product lifecycle: user research, design thinking, MVP scoping, agile sprints, pitching.",
+                "Led workshops on AI use cases in healthcare, fintech, and education, emphasizing privacy & ethical AI use",
+                "Coached fellows on storytelling and pitch decks for hackathons and demo sessions",
+                "Partnered with funding sponsors & local ecosystem hubs to secure resources",
+                "Designed recruitment funnel: 200+ applications → 20 fellows accepted (10% acceptance)"
               ]}
               solution="Successfully equipped 20 women with solution-oriented AI skills, culminating in 5 AI-driven community initiatives."
               impact={[
-                "Achieved a 90% Program Completion Rate and a 60% Post-Program AI Solution Deployment Rate",
-                "Increased Local Adoption by building products that solved immediate community needs",
-                "Secured Renewal Funding by demonstrating clear deliverables and coordinating with partners"
+                "90% completion rate",
+                "3 fellows secured funded internships, 2 launched AI-powered startups",
+                "Fellowship attracted 15,000+ online audience for Demo Day",
+                "Framework validated and being scaled to 100+ women for 2026 cohort"
               ]}
               icon={Users}
               iconBg="bg-primary/10 text-primary"
               documents={["Fellowship Curriculum Design", "Community Impact Assessment", "Funding Partner Proposals"]}
             />
           </div>
+
+          <div className="animate-fade-in">
+            <CaseStudy
+              title="Rice360 Global Health Research – Neonatal Mortality Tools"
+              role="Research Assistant"
+              challenge="Nigeria has one of the world's highest neonatal mortality rates. Clinics lacked low-cost tools to identify at-risk newborns and prevent infection."
+              process={[
+                "Worked with clinicians & engineers to design IoT neonatal monitoring prototypes",
+                "Contributed to 2 low-cost devices: smart weighing scale and 3D-printed sterilized umbilical cord clamp",
+                "Conducted data analysis on neonatal survival rates",
+                "Presented findings in academic posters & reports at Rice University forums"
+              ]}
+              solution="Developed low-cost IoT monitoring prototypes and 3D-printed medical devices for neonatal care."
+              impact={[
+                "Prototypes tested in simulation labs with clinicians validating usability",
+                "Estimated 70% cost savings compared to imported alternatives",
+                "Drafted 2 research reports & 1 poster presentation shared with global health partners"
+              ]}
+              icon={Brain}
+              iconBg="bg-accent/10 text-accent"
+              documents={["Neonatal Monitoring Research Report", "IoT Prototype Specifications", "Global Health Partnership Proposals"]}
+            />
+          </div>
+
+          <div className="animate-fade-in">
+            <CaseStudy
+              title="MedHUB – Smart Hospital & Patient Management System"
+              role="AI Engineer & Technical Product Manager"
+              challenge="Hospitals struggled with drug monitoring, appointment scheduling, and symptom tracking due to siloed data systems."
+              process={[
+                "Led a 10-person Agile team (backend, frontend, data, design, cybersecurity)",
+                "Developed AI modules for symptom prediction, reminders, and drug adherence",
+                "Coordinated with doctors, nurses, and IT staff to ensure usability",
+                "Designed MVP go-live plan including training sessions & onboarding workflows"
+              ]}
+              solution="Launched comprehensive hospital management system with AI-powered patient monitoring and appointment optimization."
+              impact={[
+                "Improved appointment adherence by 45%",
+                "Reduced medication errors by 30%",
+                "Onboarded 500+ patients in pilot hospitals within 3 months",
+                "Delivered MVP in 4 months, paving way for Series-A funding pitch"
+              ]}
+              icon={TrendingUp}
+              iconBg="bg-accent/10 text-accent"
+              documents={["AI Module Architecture", "Hospital Integration Guide", "Series-A Funding Pitch Deck"]}
+            />
+          </div>
+
+
         </section>
         
         {/* Skills & Vision Section */}
@@ -555,7 +593,7 @@ const Home = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive expertise spanning product management, AI development, and strategic leadership
+              Comprehensive expertise spanning product management, AI development, healthcare innovation, and strategic leadership
             </p>
           </div>
 
@@ -599,6 +637,16 @@ const Home = () => {
                 items={["Partnership Development", "Community Leadership", "Program Design & Implementation", "Stakeholder Engagement", "Impact Measurement"]}
               />
             </div>
+
+            <div className="flex items-center">
+              <div className="bg-primary/10 p-3 rounded-lg mr-4">
+                <Target className="w-6 h-6 text-primary" />
+              </div>
+              <Skill
+                title="Healthcare Innovation"
+                items={["Medical Device Development", "Clinical Workflow Optimization", "Healthcare Compliance & Regulations", "Patient Data Management", "IoT & Medical IoT Solutions"]}
+              />
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-primary to-accent p-8 lg:p-12 rounded-2xl text-white animate-fade-in">
@@ -607,7 +655,7 @@ const Home = () => {
               <h3 className="text-3xl font-bold">Vision Forward</h3>
             </div>
             <p className="text-xl leading-relaxed" data-testid="text-vision">
-              I believe the next decade of innovation lies in AI-driven solutions for real human problems—from financial inclusion and education to healthcare and sustainable development. My goal is to lead product and data teams building scalable, ethical, and impactful technologies for emerging markets and beyond.
+              I believe the next decade of innovation lies in AI-driven solutions for real human problems—from financial inclusion and education to healthcare and sustainable development. My goal is to lead product and data teams building scalable, ethical, and impactful technologies for emerging markets and beyond, with a particular focus on healthcare innovation and cross-border solutions.
             </p>
           </div>
         </section>
@@ -619,7 +667,7 @@ const Home = () => {
               Let's Build Impact Together
             </h2>
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto" data-testid="text-contact-subtitle">
-              Ready to scale your product with data-driven solutions? Let's discuss how we can create meaningful impact in emerging markets.
+              Ready to scale your product with data-driven solutions? Let's discuss how we can create meaningful impact in emerging markets, healthcare innovation, and cross-border solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
