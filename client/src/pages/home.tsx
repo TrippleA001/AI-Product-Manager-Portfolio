@@ -624,7 +624,7 @@ const Home = () => {
               </div>
               <Skill
                 title="Project Leadership"
-                items={["Cross-functional Team Leadership", "Workflow Automation (Make, Zapier)", "Project Scoping & Planning", "Budget & Resource Management", "Multi-timezone Coordination"]}
+                items={["Cross-functional Team Leadership", "Workflow Automation", "Project Scoping & Planning", "Budget & Resource Management"]}
               />
             </div>
           </div>
@@ -646,7 +646,7 @@ const Home = () => {
               </div>
               <Skill
                 title="Healthcare Innovation"
-                items={["Medical Device Development", "Clinical Workflow Optimization", "Healthcare Compliance & Regulations", "Patient Data Management", "IoT & Medical IoT Solutions"]}
+                items={["Medical Device Development", "Clinical Workflow Optimization", "Patient Data Management", "Medical IoT Solutions"]}
               />
             </div>
           </div>
