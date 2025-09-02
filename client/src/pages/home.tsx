@@ -646,7 +646,7 @@ const Home = () => {
               </div>
               <Skill
                 title="Healthcare Innovation"
-                items={["Medical Device Development", "Clinical Workflow Optimization", "Patient Data Management", "Medical IoT Solutions"]}
+                items={["Medical Device Development", "Clinical Workflow Optimization", "Patient Data Management", "Regulatory Compliance", "Medical IoT Solutions"]}
               />
             </div>
           </div>
