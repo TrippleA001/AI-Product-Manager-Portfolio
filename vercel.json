@@ -5,6 +5,7 @@
   ],
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/artifacts/(.*)", "dest": "/artifacts/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
