@@ -462,7 +462,7 @@ const Home = () => {
                 "Scoped requirements through faculty & student interviews (50+)",
                 "Led full product lifecycle with 15-person cross-functional team across 4 time zones",
                 "Managed Agile methodology ensuring on-time delivery across developers, data scientists, designers, and QA",
-                "Collaborated directly with AI engineers to build scalable solution handling 200+ scripts simultaneously",
+                "Collaborated directly with AI engineers to build a scalable solution handling 200+ scripts simultaneously",
                 "Integrated AI grading models + Power BI dashboards to automate feedback and track learner engagement",
                 "Conducted onboarding sessions with lecturers and piloted across 3 faculties",
                 "Designed internal GTM strategy via faculty academic councils & departmental buy-in"
@@ -471,8 +471,8 @@ const Home = () => {
               impact={[
                 "Cut grading time for lecturers by 90% while maintaining 95% accuracy",
                 "Increased student satisfaction by 25% (surveyed post-pilot)",
-                "Increased student performance by 60% by providing personalized feedback"
-                "Adopted by 5 departments, covering 2,000+ students in first semester",
+                "Increased student performance by 60% by providing personalized feedback.",
+                "Adopted by 5 departments, covering 2,000+ students in one semester",
                             ]}
               icon={Brain}
               iconBg="bg-accent/10 text-accent"
@@ -491,11 +491,11 @@ const Home = () => {
                 "Managed distributed team across 4 time zones, reducing feature delivery from 10 to 2 weeks",
                 "Collaborated with regulators & compliance officers to embed KYC/AML requirements into product roadmap",
                 "Coordinated product, design, sales, and dev teams to prioritize features",
-                "Coordinated cross-border payment API integrations and partnerships with fintects and educational bodies",
+                "Coordinated cross-border payment API integrations and partnerships with fintechs and educational bodies",
                 "Introduced real-time KPI dashboards for monitoring transactions",
                 "Launched targeted pilot campaigns with 3 universities to onboard students and schools"
               ]}
-              solution="Delivered four major product rollouts including streamlined payment platform serving users across 20 African countries."
+              solution="Delivered four major product rollouts, including a streamlined payment platform serving users across 20 African countries."
               impact={[
                 "Processed $2M+ in student tuition & cross-border transactions in first 6 months",
                 "Increased processing efficiency by 70%; reduced compliance errors by 55%",
