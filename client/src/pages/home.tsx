@@ -25,7 +25,7 @@ const Icon = ({ children, className = "" }: { children: React.ReactNode; classNa
   <span className={`text-4xl pr-4 ${className}`}>{children}</span>
 );
 
-const PDFCarousel = ({ documents }: { documents: string[] }) => {
+const PDFCarousel = ({ documents }: { documents: { title: string; url: string }[] }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -132,15 +132,17 @@ const PDFCarousel = ({ documents }: { documents: string[] }) => {
                   <FileText className="w-8 h-8 text-primary" />
                 </div>
                 <h5 className="font-semibold text-card-foreground mb-2 text-lg" data-testid={`text-pdf-title-${index}`}>
-                  {doc}
+                  {doc.title}
                 </h5>
                 <p className="text-sm text-muted-foreground mb-4">
                   PDF Document • Page {index + 1} of {documents.length}
                 </p>
-                <Button variant="default" size="sm" className="mx-auto" data-testid={`button-view-pdf-${index}`}>
-                  <Download className="w-4 h-4 mr-2" />
-                  View Full Document
-                </Button>
+                <a href={doc.url} target="_blank" rel="noreferrer" className="inline-block">
+                  <Button variant="default" size="sm" className="mx-auto" data-testid={`button-view-pdf-${index}`}>
+                    <Download className="w-4 h-4 mr-2" />
+                    View Full Document
+                  </Button>
+                </a>
               </div>
             </div>
           ))}
@@ -214,7 +216,7 @@ const CaseStudy = ({
   impact: string[];
   icon: React.ComponentType<{ className?: string }>;
   iconBg: string;
-  documents: string[];
+  documents: { title: string; url: string }[];
 }) => (
   <div className="mb-16">
     <div className="bg-card rounded-2xl shadow-xl overflow-hidden border border-border hover:shadow-2xl transition-all duration-300">
@@ -476,7 +478,10 @@ const Home = () => {
               ]}
               icon={Brain}
               iconBg="bg-accent/10 text-accent"
-              documents={["AI Model Architecture Overview", "Product Roadmap & KPI Dashboard", "Team Performance Metrics"]}
+              documents={[
+                { title: "AI Model Architecture Overview", url: "/artifacts/gradrAI/AI-Model-Architecture-Overview.pdf" },
+                { title: "Product Roadmap", url: "/artifacts/gradrAI/Product-Roadmap.pdf" }
+              ]}
             />
           </div>
 
@@ -504,7 +509,10 @@ const Home = () => {
               ]}
               icon={Globe}
               iconBg="bg-primary/10 text-primary"
-              documents={["Cross-Border Payment Strategy", "KYC Process Optimization Report", "Multi-Country Compliance Framework"]}
+              documents={[
+                { title: "Cross-Border Payment Strategy", url: "/artifacts/afripay/Cross-Border-Payment-Strategy.pdf" },
+                { title: "KYC Process Optimization Report", url: "/artifacts/afripay/KYC-Process-Optimization-Report.pdf" }
+              ]}
             />
           </div>
 
@@ -529,7 +537,9 @@ const Home = () => {
               ]}
               icon={Users}
               iconBg="bg-primary/10 text-primary"
-              documents={["Fellowship Curriculum Design", "Community Impact Assessment", "Funding Partner Proposals"]}
+              documents={[
+                { title: "6-Month Curriculum", url: "/artifacts/webfala/6-Month-Curriculum.pdf" }
+              ]}
             />
           </div>
 
@@ -552,7 +562,9 @@ const Home = () => {
               ]}
               icon={Brain}
               iconBg="bg-accent/10 text-accent"
-              documents={["Neonatal Monitoring Research Report", "IoT Prototype Specifications", "Global Health Partnership Proposals"]}
+              documents={[
+                { title: "Research and Competitor Analysis Report", url: "/artifacts/rice360/Research-and-Competitor-Analysis-Report.pdf" }
+              ]}
             />
           </div>
 
@@ -576,7 +588,9 @@ const Home = () => {
               ]}
               icon={TrendingUp}
               iconBg="bg-accent/10 text-accent"
-              documents={["AI Module Architecture", "Hospital Integration Guide", "Series-A Funding Pitch Deck"]}
+              documents={[
+                { title: "Hospital Integration Guide", url: "/artifacts/medhub/Hospital-Integration-Guide.pdf" }
+              ]}
             />
           </div>
 
