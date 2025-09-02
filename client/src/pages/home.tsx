@@ -668,10 +668,10 @@ const Home = () => {
           <div className="bg-gradient-to-r from-primary to-accent p-8 lg:p-12 rounded-2xl text-white animate-fade-in">
             <div className="flex items-center mb-6">
               <Star className="w-8 h-8 mr-4" />
-              <h3 className="text-3xl font-bold">Vision Forward</h3>
+              <h3 className="text-3xl font-bold">Vision</h3>
             </div>
             <p className="text-xl leading-relaxed" data-testid="text-vision">
-              I believe the next decade of innovation lies in AI-driven solutions for real human problems—from financial inclusion and education to healthcare and sustainable development. My goal is to lead product and data teams building scalable, ethical, and impactful technologies for emerging markets and beyond, with a particular focus on healthcare innovation and cross-border solutions.
+              I believe the next decade of innovation lies in AI-driven solutions for real human problems, ranging from financial inclusion and education to healthcare and sustainable development. My goal is to lead product and data teams building scalable, ethical, and impactful technologies for emerging markets and beyond, with a particular focus on transformative innovation and cross-border solutions.
             </p>
           </div>
         </section>
